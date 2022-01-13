@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Celebrate with a confetti party popper</title>
+  <meta name="description" content="Instant, free, organic, confetti on your screen. Sourced responsibly.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Confetti Celebration</h1>
+  </header>
+  <article>
+    <p>For that special occasion, click the button and get some gratification. CLICK THE BUTTON.</p>
+    <button onclick="celebrate()">Celebrate</button>
+  </article>
+  <footer>Instant, free, online, JavaScript, simple, hassle free, organic, confetti. Sourced responsibly. By <a
+      href="https://twitter.com/ubershmekel">ubershmekel@</a></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    function addDarkmodeWidget() {
+      new Darkmode(
+        {
+          label: '🌓', // default: ''
+        }).showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

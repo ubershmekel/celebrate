@@ -1,0 +1,44 @@
+/*
+Combo of:
+https://www.swyx.io/css-100-bytes/
+https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b/20352949#20352949
+*/
+
+html {
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+body {
+  height:100vh;
+  margin: auto;
+  /* margin:0; */
+  max-width: 70ch;
+  display:flex; 
+  flex-direction:column;
+}
+
+article {
+  padding-left: 0.5em;
+}
+
+header{
+  min-height:50px;
+  background:lightcyan;
+  padding-left: 0.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer{
+  min-height:50px;
+  background:PapayaWhip;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  margin-top:auto; 
+}
+
+button {
+  align-self: flex-start;
+}
