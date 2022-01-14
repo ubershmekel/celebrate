@@ -8,7 +8,8 @@ function realisticConfetti() {
     },
     angle: Math.random() * 20 + 80,
     resize: true,
-    ticks: 600, // time to fade
+    ticks: 700, // time to fade
+    gravity: 0.9,
   };
 
   function fire(particleRatio, opts) {
@@ -63,10 +64,13 @@ function playSound() {
     shuffleArray(files);
     soundsIndex = 0;
   }
-  const filePath = files[Math.floor(Math.random() * files.length)];
+  const filePath = files[soundsIndex];
   soundsIndex++;
   var audio = new Audio('sounds/' + filePath);
   audio.playbackRate = 0.8 + 0.4 * Math.random(); // 0.8 - 1.2 speed
+  audio.preservesPitch = false;
+  audio.mozPreservesPitch = false;
+  audio.webkitPreservesPitch = false;
   audio.play();
 }
 
