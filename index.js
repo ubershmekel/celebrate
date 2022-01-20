@@ -71,6 +71,8 @@ function playSound() {
   audio.preservesPitch = false;
   audio.mozPreservesPitch = false;
   audio.webkitPreservesPitch = false;
+  // For audio conferencing ease, make sure the celebration audio isn't too loud.
+  audio.volume = 0.5;
   audio.play();
 }
 

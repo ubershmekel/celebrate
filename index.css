@@ -41,4 +41,5 @@ footer{
 
 button {
   align-self: flex-start;
+  box-shadow: 2px 2px 2px #faa;
 }
